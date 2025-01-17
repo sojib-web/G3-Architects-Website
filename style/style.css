@@ -150,17 +150,34 @@ nav {
   border-left: 5px solid #ff900e;
   padding-left: 20px;
 }
+#experience_badge {
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -70px;
+  margin-top: -200px;
+}
 
+#experience_year {
+  font-size: 4rem;
+  font-weight: bold;
+}
 .features {
   gap: 100px;
 }
-
+.features_text {
+  margin-bottom: 20px;
+}
 .features_card {
   border-radius: 8px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
   background: rgb(255, 255, 255);
   padding: 30px;
   margin-bottom: 45px;
+}
+
+.features_architect img {
+  width: 100%;
 }
 .someFacts {
   color: rgb(19, 19, 19);
@@ -253,7 +270,8 @@ footer {
 @media screen and (max-width: 576px) {
   .navbar,
   .nav_links,
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
   }
   .team_img_container,
@@ -276,6 +294,11 @@ footer {
   .someFacts_container p {
     max-width: 100%;
     text-align: center;
+  }
+
+  #experience_badge {
+    margin-top: 50px;
+    margin-left: 100px;
   }
 }
 
